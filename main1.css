@@ -1,0 +1,713 @@
+.Shop1 {
+
+    display: flex;
+    justify-content: center;
+}
+
+
+.card {
+    background-color: rgb(230, 229, 229);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 6px 8px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 350px;
+    border-radius: 5px;
+    margin: 10px;
+
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    padding: 2px 10px;
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.wrapper {
+    margin-top: 20px;
+    width: 295px;
+    height: 295px;
+    border-radius: 25px;
+    /* Регулируйте значение border-radius для изменения степени скругления углов */
+    background-color: transparent;
+    /* Прозрачный фон, чтобы блок был невидимым */
+
+    box-shadow: 0px 0px 2px 10px rgb(241, 197, 14);
+}
+
+img {
+
+    margin: 0 auto;
+    margin-top: 0px;
+    width: 295px;
+    height: 295px;
+}
+
+.desc {
+    margin-bottom: 75px;
+}
+
+h2,
+h4,
+p {
+    margin-left: 0px;
+}
+
+.price {
+
+    margin-left: 0px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+.points {
+    margin-top: 16px;
+    margin-left: 10px;
+}
+
+p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+}
+
+h2 {
+    margin-top: 40px;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+.wrapper1 {
+    overflow: hidden;
+    max-width: 390px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper1 .title-text {
+    display: flex;
+    width: 200%;
+}
+
+.wrapper1 .title {
+    width: 50%;
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper1 .slide-controls {
+    position: relative;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    overflow: hidden;
+    margin: 30px 0 10px 0;
+    justify-content: space-between;
+    border: 1px solid lightgrey;
+    border-radius: 15px;
+}
+
+.slide-controls .slide {
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 48px;
+    cursor: pointer;
+    z-index: 1;
+    transition: all 0.6s ease;
+}
+
+.slide-controls label.signup {
+    color: #000;
+}
+
+.slide-controls .slider-tab {
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    left: 0;
+    z-index: 0;
+    border-radius: 15px;
+    background: -webkit-linear-gradient(left, #003366, #004080, #0059b3, #0073e6);
+    transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+#signup:checked~.slider-tab {
+    left: 50%;
+}
+
+#signup:checked~label.signup {
+    color: #fff;
+    cursor: default;
+    user-select: none;
+}
+
+#signup:checked~label.login {
+    color: #000;
+}
+
+#login:checked~label.signup {
+    color: #000;
+}
+
+#login:checked~label.login {
+    cursor: default;
+    user-select: none;
+}
+
+.wrapper1 .form-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.form-container .form-inner {
+    display: flex;
+    width: 200%;
+}
+
+.form-container .form-inner form {
+    width: 50%;
+    transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.form-inner form .field {
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.form-inner form .field input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    padding-left: 15px;
+    border-radius: 15px;
+    border: 1px solid lightgrey;
+    border-bottom-width: 2px;
+    font-size: 17px;
+    transition: all 0.3s ease;
+}
+
+.form-inner form .field input:focus {
+    border-color: #1a75ff;
+    /* box-shadow: inset 0 0 3px #fb6aae; */
+}
+
+.form-inner form .field input::placeholder {
+    color: #999;
+    transition: all 0.3s ease;
+}
+
+form .field input:focus::placeholder {
+    color: #1a75ff;
+}
+
+.form-inner form .pass-link {
+    margin-top: 5px;
+}
+
+.form-inner form .signup-link {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.form-inner form .pass-link a,
+.form-inner form .signup-link a {
+    color: #1a75ff;
+    text-decoration: none;
+}
+
+.form-inner form .pass-link a:hover,
+.form-inner form .signup-link a:hover {
+    text-decoration: underline;
+}
+
+form .btn {
+    height: 50px;
+    width: 100%;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+form .btn .btn-layer {
+    height: 100%;
+    width: 300%;
+    position: absolute;
+    left: -100%;
+    background: -webkit-linear-gradient(right,
+            #003366,
+            #004080,
+            #0059b3,
+            #0073e6);
+    border-radius: 15px;
+    transition: all 0.4s ease;
+}
+
+form .btn:hover .btn-layer {
+    left: 0;
+}
+
+form .btn input[type="submit"] {
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    position: relative;
+    background: none;
+    border: none;
+    color: #fff;
+    padding-left: 0;
+    border-radius: 15px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital.wght@0,400;0,500;1,500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    border-radius: 10px;
+    background-color: rgba(131, 168, 255, 0.225);
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 2px solid rgb(235, 231, 231);
+
+}
+
+header .logo {
+
+    font-size: 10px;
+    margin-left: 30px;
+    margin-top: 1px;
+
+}
+
+header #main-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+header #main-menu .item {
+    margin: 0px 30px;
+    transition: all 0.3s;
+}
+
+header #main-menu .item:hover {
+    color: #20B7BC;
+}
+
+
+header .Login-header {
+    margin-right: 30px;
+    width: 200px;
+    height: 40px;
+    background: #128baa;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+
+header .Login-header:hover {
+    background-color: #20bc69;
+}
+
+li,
+.Login-header {
+    cursor: pointer;
+}
+
+.Log {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#icon {
+    margin-right: 200px;
+}
+
+.Login-header {
+    margin-left: 300px;
+}
+
+.navbar {
+    margin-left: 220px;
+}
+
+body.overlay {
+    overflow: hidden;
+}
+
+.Log {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+
+}
+
+.Log.active {
+    display: flex;
+}
+
+
+.Log .close-btn {
+    visibility: hidden;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 8px 16px;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.Home {
+
+    display: flex;
+    padding-top: 20%;
+    color: black;
+    height: 100vh;
+    background-image: url(img/White\ and\ Violet\ Professional\ Modern\ Technology\ Pitch\ Deck\ Presentation.png);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.Home h1 {
+    margin-left: 200px;
+    font-size: 3em;
+}
+
+.Home h2 {
+    position: absolute;
+    left: 140px;
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: gray;
+}
+
+.w-img {
+    position: absolute;
+    right: 200px;
+    top: 300px;
+}
+
+.Home img {
+    border-radius: 300px;
+    box-shadow: 0px 0px 20px 2px #4671D5;
+}
+
+.About {
+    padding-top: 150px;
+    height: 100vh;
+    background-image: url(img/Fon\ 2.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.AboutUs1 {
+    display: flex;
+    justify-content: center;
+}
+
+.Talk p {
+    margin-left: 70px;
+}
+
+.img1,
+.img2 {
+    margin-right: 40px;
+}
+
+.AboutUs1 h1 {
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+.Ab {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.Team {
+    background-image: url(img/team.png);
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 60px;
+    padding-top: 10px;
+}
+
+.team-container {
+    text-align: center;
+    margin: auto;
+    max-width: 920px;
+}
+
+.Shop {
+    background-image: url(img/Tovari.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.team-section-header {
+    padding-top: 20px;
+    color: white;
+    padding-bottom: 120px;
+}
+
+.team-member {
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+.team-member-position {
+    color: #747474;
+}
+
+.team-member-text {
+    padding-top: 25px;
+}
+
+.team-social-icon {
+    width: 40px;
+    height: 40px;
+    padding: 7px;
+}
+
+.team-section-header {
+    display: flex;
+    justify-content: center;
+
+}
+
+.team-container-row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.pricing-section-header {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.pricing-section-sub {
+    opacity: 70%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.pricing-background {
+    padding-top: 20px;
+    /* Или margin-top: 20px; */
+}
+
+.card {
+    margin-bottom: 60px;
+}
+
+.header {
+    border-radius: 0px;
+    background-image: url(img/head.png);
+}
+
+#main-menu {
+    color: white;
+}
+
+#icon {
+    color: white;
+}
+
+/* Стили для скрытия формы по умолчанию */
+.signup-form {
+    display: none;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1400px) {
+    .Shop1 .card {
+        width: 300px;
+        height: 300px;
+    }
+
+    .img_shop,
+    .container,
+    .wrapper {
+        height: 100px;
+        width: 100px;
+    }
+
+    .wrapper {
+        margin-top: -80px;
+    }
+
+    #main-menu {
+        margin-left: -400px;
+    }
+
+    .Login-header {
+        margin-left: 0px;
+        margin-right: auto;
+    }
+}
+
+.user-pic {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.sub-menu-wrap {
+    position: absolute;
+    top: 9%;
+    height: 220px;
+    right: 8%;
+    width: 320px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+
+.sub-menu-wrap.open-menu {
+    max-height: 300px;
+
+}
+
+.sub-menu {
+    background: #1a1a1a;
+    padding: 15px;
+    margin: 10px;
+}
+
+.sub-menu::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    right: 30px;
+    width: 25px;
+    height: 25px;
+    background-color: black;
+    transform: rotate(45deg);
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.user-info h3 {
+    font-weight: 500;
+}
+
+.user-info img {
+    margin-left: 40px;
+    justify-content: left;
+    width: 70px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.sub-menu hr {
+    background: #fff;
+    border: 0;
+    height: 1px;
+    width: 100%;
+    margin: 15px 0 15px;
+}
+
+.sub-menu-link {
+    color: white;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    margin: 10px;
+}
+
+.sub-menu-link p {
+    width: 100%;
+    font-size: 12px;
+}
+
+.sub-menu-link .icon {
+    margin-right: 15px;
+    padding: 1px;
+}
+
+.sub-menu-link span {
+    color: white;
+    font-size: 20px;
+    transition: transform 0.5s;
+}
+
+.sub-menu-link:hover span {
+    transform: translateX(5px);
+}
+
+.sub-menu-link:hover p {
+    font-size: 13px;
+}

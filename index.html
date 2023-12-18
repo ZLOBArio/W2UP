@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main1.css">
+
+
+    <title>W2Up</title>
+
+</head>
+
+<body>
+    <div class="layout">
+        <div id="web">
+            <!--header-->
+            <header class="header">
+                <div class="logo">
+                    <h1 id="icon">Way2Up</h1>
+                </div>
+                <nav class="navbar">
+                    <ul id="main-menu">
+                        <li class="item">Home</li>
+                        <li class="item">About</li>
+                        <li class="item">Shop</li>
+                        <li class="item">Team</li>
+                    </ul>
+
+                </nav>
+
+                <div class="Login-header" id="loginSignupButton">Login / SignUp</div>
+
+                <div class="sub-hide" style="display: none;">
+                    <img src="img/1.jpeg" alt="profil" class="user-pic" onclick="toggleMenu()" />
+                    <div class="sub-menu-wrap" id="subMenu" style="display: none;">
+                        <div class="sub-menu">
+                            <div class="user-info">
+                                <img src="img/1.jpeg" alt="profil" class="user-pic" />
+                                <h3>Disvi Ariani</h3>
+                            </div>
+                            <hr />
+                            <a href="#" class="sub-menu-link">
+                                <i data-feather="user" class="icon1"></i>
+                                <p>Edit Profile</p>
+                                <span> </span>
+                            </a>
+                            <a href="#" class="sub-menu-link">
+                                <i data-feather="settings" class="icon1"></i>
+                                <p>Settings & Privacy</p>
+                                <span> </span>
+                            </a>
+                            <a href="#" class="sub-menu-link">
+                                <i data-feather="help-circle" class="icon1"></i>
+                                <p>Help & Support</p>
+                                <span> </span>
+                            </a>
+                            <a href="#" class="sub-menu-link">
+                                <i data-feather="log-out" class="ico1n"></i>
+                                <p>Log Out</p>
+                                <span> </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+        </div><!--header-->
+
+        <!--Log/Sign form-->
+        <selection class="Log">
+            <div class="wrapper1">
+                <div class="title-text">
+                    <div class="title login">Login Form</div>
+                    <div class="title signup">Signup Form</div>
+                </div>
+                <div class="form-container">
+                    <div class="slide-controls">
+                        <input type="radio" name="slide" id="login" checked>
+                        <input type="radio" name="slide" id="signup">
+                        <label for="login" class="slide login">Login</label>
+                        <label for="signup" class="slide signup">SignUp</label>
+                        <div class="slider-tab"></div>
+                    </div>
+                    <div class="form-inner">
+                        <form action="#" class="login" id="myForm">
+                            <div class="field">
+                                <input type="text" placeholder="Email Address" required>
+                            </div>
+                            <div class="field">
+                                <input type="password" placeholder="Password" required>
+                            </div>
+                            <div class="pass-link"><a href="#">Forgot password?</a></div>
+                            <div class="field btn">
+                                <div class="btn-layer"></div>
+                                <input type="submit" value="Login">
+                            </div>
+                            <div class="signup-link">Not a member? <a href="#">SignUp now</a></div>
+                        </form>
+                        <form action="#" class="signup">
+                            <div class="field">
+                                <input type="text" placeholder="Email Address" required>
+                            </div>
+                            <div class="field">
+                                <input type="password" placeholder="Password" required>
+                            </div>
+                            <div class="field">
+                                <input type="password" placeholder="Confirm password" required>
+                            </div>
+                            <div class="field btn">
+                                <div class="btn-layer"></div>
+                                <input type="submit" value="Signup">
+                            </div>
+                            <button class="close-btn">Close</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </selection>
+        <!--Log/Sign form-->
+
+        <!--Info-->
+        <selection>
+
+            <div class="Home">
+                <div class="nameq">
+                    <h1>Way2Up</h1>
+                    <h2>Step into the future with us</h2>
+                </div>
+                <div class="w-img">
+                    <img id="iii" src="img/Way2Up.png">
+                </div>
+            </div>
+        </selection>
+
+        <selection>
+            <div class="About">
+                <div class="AboutUs1">
+                    <h1>About us</h1>
+                </div>
+                <div class="Ab">
+                    <div class="Talk">
+                        <p>Это сайт, который вознаграждает студентов за их </p>
+                        <p>успехи и вклад в университетское сообщество. Так
+                        <p>же этот ресурс в последующем можно использовать
+                        <p> в школах.</p>
+                        <br>
+                        <p>Каждый раз, когда студент достигает высоких оценок,
+                        <p> выполняет значимые проекты для университета или
+                        <p> участвует в его активной жизни - ему начисляются
+                        <p> бонусные баллы.</p>
+                        <br>
+                        <p>Эти баллы можно обменивать на различные
+                        <p> вознаграждения
+                            и привилегии, помогающие в
+                        <p>профессиональном и личном развитии. </p>
+                        <br>
+                        <p>Этот проект - это не просто бонусная система, это
+                        <p> возможность для студентов проявить свой потенциал,
+                        <p> получить дополнительное образование и мотивацию
+                        <p> для лучших результатов</p>
+                    </div>
+                    <div class="img1"><img src="img/Рисунок1.png" alt=""></div>
+                    <div class="img2"><img src="img/Рисунок2.png" alt=""></div>
+                </div>
+
+            </div>
+        </selection>
+        <!--Info-->
+
+        <!--Goods-->
+        <section class="Shop">
+            <div id="pricing" class="pricing-background">
+
+                <h2 class="pricing-section-header">CHOOSE YOUR PRICING PLAN</h2>
+                <h4 class=" pricing-section-sub">Pick any of our super affordable pricing plans</h4>
+            </div>
+            <div class="Shop1">
+                <div class="card">
+                    <div class="container">
+                        <div class="wrapper">
+                            <img class="img_shop"
+                                src="img/White Simple Online Course Facebook Post (9)-round-corners.png" alt="">
+                        </div>
+                        <h2><b>ONLINE COURSE</b></h2>
+                        <h4 class="desc">Курс от Modsen</h4>
+                        <div class="price">
+                            <p class="points">1500 points</p>
+                            <button class="button">КУПИТЬ</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="container">
+                        <div class="wrapper">
+                            <img class="img_shop" src="img/2.png" alt="">
+                        </div>
+                        <h2><b>20%</b></h2>
+                        <h4 class="desc">Скидка на обучение</h4>
+                        <div class="price">
+                            <p class="points">2000 points</p>
+                            <button class="button">КУПИТЬ</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="container">
+                        <div class="wrapper">
+                            <img class="img_shop"
+                                src="img/Black Yellow Modern Fitness Gym Instagram Post-round-corners-round-corners.png"
+                                alt="">
+                        </div>
+                        <h2><b>GYM FITNESS</b></h2>
+                        <h4 class="desc">Месяц Спорта</h4>
+                        <div class="price">
+                            <p class="points">1000 points</p>
+                            <button class="button">КУПИТЬ</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!--Goods-->
+
+        <!--Team-->
+        <div id="Team" class="Team">
+
+            <div class="team-section-header">
+                <h2 id="hh2">THE TEAM</h2>
+            </div>
+            <div class="team-container-row">
+
+
+                <div class="col-sm-4 team-member">
+                    <img src="img/photo_2023-11-29_00-45-24-removebg-preview.png">
+                    <div class="team-member-text">
+                        <h4 class="team-member-position light">Creator of the idea.
+                            Front-end developer</h4>
+                        <h5 class="bold">Alexander Kachanov</h5>
+                        <p class="light">Designed what you see</p>
+                        <a href="www.twitter.com"><img class="team-social-icon" src="img/team-twitter.svg"></a>
+                        <a href="www.facebook.com"><img class="team-social-icon" src="img/team-facebook.svg"></a>
+                        <a href="plus.google.com"><img class="team-social-icon" src="img/team-google.svg"></a>
+                    </div>
+                </div>
+
+                <div class="col-sm-4 team-member">
+                    <img src="img/photo_2023-11-30_00-27-32.jpg">
+                    <div class="team-member-text">
+                        <h4 class="team-member-position light">Captain</h4>
+                        <h5 class="bold">Pavel Palaba</h5>
+                        <p class="light">Manages and represents our product </p>
+                        <a href="http://www.twitter.com"><img class="team-social-icon" src="img/team-twitter.svg"></a>
+                        <a href="http://www.facebook.com"><img class="team-social-icon" src="img/team-facebook.svg"></a>
+                        <a href="https://plus.google.com/"><img class="team-social-icon" src="img/team-google.svg"></a>
+                    </div>
+                </div>
+
+                <div class="col-sm-4 team-member">
+                    <img src="img/photo_2023-12-10_21-23-56-removebg-preview.png">
+                    <div class="team-member-text">
+                        <h4 class="team-member-position light">Back-end developer</h4>
+                        <h5 class="bold">Pavel Gurevich</h5>
+                        <p class="light">Responsible for back-end</p>
+                        <a href="http://www.twitter.com"><img class="team-social-icon" src="img/team-twitter.svg"></a>
+                        <a href="http://www.facebook.com"><img class="team-social-icon" src="img/team-facebook.svg"></a>
+                        <a href="https://plus.google.com/"><img class="team-social-icon" src="img/team-google.svg"></a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div> <!--Team-->
+    </div>
+    <script src="script.js"></script>
+    <script src="back.js"></script>
+</body>
+
+</html>
